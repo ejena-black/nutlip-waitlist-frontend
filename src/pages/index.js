@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
     <main className={styles.hero}>
-      <div className='flex flex-col mt-20 gap-8'>
+      <div className='flex flex-col lg:mt-20 gap-8 mt-24'>
           <div className='text-[33.67px] lg:text-[54px]  flex justify-center'>
               <span className='lg:w-[769px] leading-[41.75px] font-unbounded block text-center lg:leading-[66.96px] tracking-wide'>Revolutionary property search portal </span>
             </div>
@@ -25,7 +25,7 @@ export default function Home() {
               </span>
             </div>
 
-            <div className='lg:flex flex-col lg:flex-row justify-center lg:gap-[10px] font-urbanist'>
+            <div className='lg:flex flex-col lg:flex-row justify-center lg:gap-[10px] font-urbanist pl-8 lg:mt-10'>
               <input className=' p-[16px] w-[342px] lg:w-[433px] text-black rounded-[8px] bg-[#E7E7E7] border-2 border-[#E7E7E7]' placeholder='Email address' type='text'/>
               <button className=' mt-4 lg:mt-0 text-[18px] bg-[#da0025] w-[240px] p-[16px] rounded-[8px]'>Get early access</button>
             </div>
@@ -35,7 +35,7 @@ export default function Home() {
         <div className='flex justify-center text-[18px] font-urbanist mt-8'>
           <p>Are you an investor? <span className=' underline cursor-pointer'>Click here</span></p>
         </div>
-        <div className=' flex items-center gap-[64px] justify-center mt-8'>
+        <div className=' flex items-center lg:gap-[64px] gap-[56px] justify-center mt-8'>
           <div className=' w-[24px] h-[24px]'>
             <Image src={fb} />
           </div>
