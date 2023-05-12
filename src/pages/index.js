@@ -34,7 +34,7 @@ export default function Home() {
 
 
         <div className='flex justify-center text-[18px] font-urbanist mt-16'>
-          <p>Are you an investor? <span className=' underline cursor-pointer'>Click here</span></p>
+          <p>Are you an investor? <span className=' underline cursor-pointer'><Link href={"/invest-form"}>Click here</Link></span></p>
         </div>
         <div className=' flex items-center lg:gap-[64px] gap-[56px] justify-center mt-16'>
           <div className=' w-[24px] h-[24px]'>
