@@ -10,9 +10,9 @@ const Waitlist = () => {
                 alt="image"
                 />
             </div>  
-            <div className=" lg:w-[800px] bg-[#001F6D] flex justify-center py-10">
-                <div className=" w-[448px] text-[#FFFFFF]">
-                    <div className=" font-unbounded flex gap-6 mt-10 mb-12 text-[24px] items-center">
+            <div className=" w-full lg:w-[800px] bg-[#001F6D] flex justify-center py-10">
+                <div className=" w-full lg:w-[448px] text-[#FFFFFF]">
+                    <div className="px-[8%] font-unbounded flex gap-6 mt-10 mb-12 text-[24px] items-center">
                         <Image
                         src={arrow} 
                         />
@@ -21,32 +21,36 @@ const Waitlist = () => {
                     </div>
                    
                    
-                    <div className=" font-urbanist mb-[13px]">
+                    <div className=" px-[8%] font-urbanist mb-[13px]">
                         <span className=" text-[16px] leading-[19px] font-extralight">Full name</span>
                         <input 
                         className=" rounded-[8px] block text-[#505050] p-[16px] w-full text-[18px]"
                          type="text"
                          placeholder="Full name"/>
                     </div>
-                    <div className=" font-urbanist mb-[13px]">
+                    <div className=" px-[8%] font-urbanist mb-[13px]">
                         <span className=" text-[16px] leading-[19px font-extralight">Company</span>
                         <input 
                         className=" rounded-[8px] block text-[#505050] p-[16px] w-full text-[18px]"
                          type="text"
                          placeholder="Company name"/>
                     </div>
-                    <div className=" font-urbanist mb-[13px]">
+                    <div className=" px-[8%] font-urbanist mb-[13px]">
                         <span className=" text-[16px] leading-[19px]  font-extralight">What best describes you</span>
                         <select 
                         className=" rounded-[8px] block text-[#505050] p-[16px] w-full text-[18px]"
-                         placeholder="Company name">
-                            <option>What best describes you</option>
+                         >
+                            <option disabled>What best describes you</option>
+                            <option>Property seeker</option>
+                            <option>Real estate agent</option>
+                            <option>Mortgage broker</option>
+                            <option>Solicitor</option>
                          </select>
                     </div>
-                    <div className=" font-urbanist mb-[13px]">
+                    <div className=" px-[8%] font-urbanist mb-[13px]">
                         <span className=" text-[16px] leading-[19px] font-extralight">Suggestion box</span>
                         <textarea 
-                        className=" h-[109px] rounded-[8px] block text-[#505050] p-[16px] w-full text-[18px]"
+                        className=" h-[109px] rounded-[8px] block text-[#505050] p-[16px] w-full lg:text-[18px]"
                         placeholder="What feature or problem will you like our platform to add or solve?"
                          />
                     </div>

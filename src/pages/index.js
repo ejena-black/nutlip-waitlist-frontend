@@ -5,6 +5,7 @@ import fb from '../../public/facebook.png';
 import ig from '../../public/instagram.png';
 import tw from '../../public/twitter.png';
 import lk from '../../public/linkedin.png';
+import Link from 'next/link';
 
 
 export default function Home() {
@@ -25,10 +26,10 @@ export default function Home() {
               </span>
             </div>
 
-            <div className=' mt-16 lg:flex px-[8%] flex-col lg:flex-row justify-center lg:gap-[10px] font-urbanist lg:mt-10'>
-              <input className=' p-[16px] w-full lg:w-[433px] text-black rounded-[8px] bg-[#E7E7E7] border-2 border-[#E7E7E7]' placeholder='Email address' type='text'/>
-              <button className=' mt-4 lg:mt-0 text-[18px] bg-[#da0025] w-[240px] p-[16px] rounded-[8px]'>Get early access</button>
-            </div>
+            <form className=' mt-16 lg:flex px-[8%] flex-col lg:flex-row justify-center lg:gap-[10px] font-urbanist lg:mt-10'>
+              <input className=' p-[16px] w-full lg:w-[433px] text-black rounded-[8px] bg-[#E7E7E7] border-2 border-[#E7E7E7]' placeholder='Email address' type='email' required/>
+              <button className=' mt-4 lg:mt-0 text-[18px] bg-[#da0025] w-[240px] p-[16px] rounded-[8px]'><Link href={"/waitlist"}>Get early access</Link></button>
+            </form>
       </div>
 
 
