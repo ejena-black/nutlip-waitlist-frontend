@@ -1,4 +1,4 @@
-.hero{
+/* .hero{
     background-image: linear-gradient(to top,
     rgba(2,19,62, 0.7),
     rgba(2,19,62,1) 60%),url(../../public/building.png);
@@ -6,4 +6,22 @@
     width: 100vw;
     color: white;
     background-size: cover;
+} */
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-color:#02133E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero{
+    opacity: 100%;
+    background-image: url(../../public/building.png);
+    background-size: cover;
+    color: #ffffff;
+    width: 100vw;
+    height: 100vh;
 }
