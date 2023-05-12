@@ -14,14 +14,15 @@
     background-color:#02133E;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:flex-end;
 }
 
 .hero{
     opacity: 100%;
     background-image: url(../../public/building.png);
     background-size: cover;
+    background-repeat: no-repeat;
     color: #ffffff;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 }
