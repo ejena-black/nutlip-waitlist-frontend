@@ -55,9 +55,9 @@ const Waitlist = () => {
                          />
                     </div>
 
-                    <div className=" mt-16 flex gap-[8px]">
+                    <div className=" mt-16 flex gap-[8px] px-[8%] w-full">
                         <div className=" text-[18px] w-[148px] rounded-[8px] border-2 p-[16px] text-center">Learn more</div>
-                        <div className=" text-[18px] rounded-[8px] w-[292px] bg-[#DA0025] p-[16px] text-center">Join our waitlist</div>
+                        <div className=" w-[186px] text-[18px] rounded-[8px] lg:w-[292px] bg-[#DA0025] p-[16px] text-center">Join our waitlist</div>
                     </div>
 
                 </div>
