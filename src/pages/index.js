@@ -25,8 +25,8 @@ export default function Home() {
               </span>
             </div>
 
-            <div className='lg:flex flex-col lg:flex-row justify-center lg:gap-[10px] font-urbanist pl-8 lg:mt-10'>
-              <input className=' p-[16px] w-[342px] lg:w-[433px] text-black rounded-[8px] bg-[#E7E7E7] border-2 border-[#E7E7E7]' placeholder='Email address' type='text'/>
+            <div className='lg:flex flex-col lg:flex-row justify-center lg:gap-[10px] font-urbanist lg:mt-10'>
+              <input className=' p-[16px] w-[100vw] px-[3%] lg:w-[433px] text-black rounded-[8px] bg-[#E7E7E7] border-2 border-[#E7E7E7]' placeholder='Email address' type='text'/>
               <button className=' mt-4 lg:mt-0 text-[18px] bg-[#da0025] w-[240px] p-[16px] rounded-[8px]'>Get early access</button>
             </div>
       </div>
