@@ -66,13 +66,13 @@ const InvestForm = () => {
                 </div>
                 {
                     showodal? (
-                        <div className=" fixed inset-0 flex justify-center">
-                            <div className=" px-[87.5px] bg-[#F2F6FF] xl:w-[818px] xl:h-[644px] rounded-[32px] font-urbanist">
+                        <div className="absolute xl:fixed inset-0 flex justify-center">
+                            <div className=" px-[16px] w-[342px] h-[1200px] xl:px-[87.5px] bg-[#F2F6FF] xl:w-[818px] xl:h-[644px] rounded-[32px] font-urbanist">
                                 <div onClick={()=>setShowModal(false)} className=" cursor-pointer text-[20.4px] font-bold mt-[76.5px] flex justify-end">X</div>
                         
-                                <div className="flex flex-col gap-[16px]">
+                                <div className=" flex flex-col gap-[16px]">
                                     <p className=" font-bold text-[18px] leading-[21.6px]">Invest with nutlip</p>
-                                    <div className=" w-[643px] text-[14px] flex flex-col leading-[16.8px] gap-[16px]"><p>Introducing our exciting new property search portal in order to garner your interest for investment. Our platform seeks to revolutionize the way people search for and invest in real estate properties. We are also leveraging blockchain technology and continue to develop it to ensure quick and transparency of transactions for both users and agents listing on the platform.</p>
+                                    <div className=" w-[310px] xl:w-[643px] text-[14px] flex flex-col leading-[16.8px] xl:gap-[16px] gap-[10px]"><p>Introducing our exciting new property search portal in order to garner your interest for investment. Our platform seeks to revolutionize the way people search for and invest in real estate properties. We are also leveraging blockchain technology and continue to develop it to ensure quick and transparency of transactions for both users and agents listing on the platform.</p>
 
                                         <p>We are leveraging technology to create a database of properties that is continually updated with real-time data, ensuring that our users have access to the most relevant and up-to-date property listings.</p>
 
