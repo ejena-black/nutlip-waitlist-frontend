@@ -67,8 +67,8 @@ const Waitlist = () => {
 
                 {
                     showodal? (
-                        <div className=" fixed inset-0 flex justify-center">
-                            <div className=" px-[16px] w-[342px] h-[100%] xl:px-[45px] bg-[#F2F6FF] xl:w-[1104px] xl:h-[644px] rounded-[32px] font-urbanist">
+                        <div className=" absolute lg:fixed inset-0 flex justify-center">
+                            <div className=" px-[16px] w-[342px] h-[1470px] xl:px-[45px] bg-[#F2F6FF] xl:w-[1104px] xl:h-[644px] rounded-[32px] font-urbanist">
                                 <div onClick={()=>setShowModal(false)} className=" cursor-pointer text-[20.4px] font-bold mt-[62px] flex justify-end">X</div>
                                 <div className=" flex flex-col lg:flex lg:gap-[32px]">
                                     <div className=" flex flex-col gap-[24px]">
@@ -82,7 +82,7 @@ const Waitlist = () => {
                                         </div>
 
                                     </div>
-                                    <div className=" flex flex-col gap-[24px]">
+                                    <div className=" flex flex-col gap-[24px] xl:mt-0 mt-[24px]">
                                         <div className=" w-[310px] flex flex-col gap-[16px] xl:w-[491px]">
                                             <p className=" text-[18px] leading-[21.6px] font-semibold">Estate Agents</p>
                                             <p className=" text-[14px] leading-[16.8px]">Our platform will be an intuitive, user-friendly, and a secured platform that focuses on providing more efficient and streamlined property search results amongst others increasing your lead conversion rate by 20% using our interactive Picture, Video and Virtual tour viewing windows, never before seen on any UK Property Search Portal. All these and more for less than £50 a month subscription. We are inviting all Estate Agents to join our waitlist, and as an added bonus, we will be giving the first 5000 estate agents that join the waitlist and subscribe to the platform during or after launch, a fantastic offer - 3 free premium listings a month for 1 year. This offer is just one of the ways we plan to reward our members for their trust and help them succeed in all their business endeavors.</p>
