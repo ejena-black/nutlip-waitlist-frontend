@@ -33,10 +33,10 @@ export default function Home() {
       </div>
 
 
-        <div className='flex justify-center text-[18px] font-urbanist mt-16'>
+        <div className='flex justify-center text-[18px] font-urbanist mt-10 lg:mt-16'>
           <p>Are you an investor? <span className=' underline cursor-pointer'><Link href={"/invest-form"}>Click here</Link></span></p>
         </div>
-        <div className=' flex items-center lg:gap-[64px] gap-[56px] justify-center mt-16'>
+        <div className=' flex items-center lg:gap-[64px] gap-[56px] mt-10 justify-center lg:mt-16 mb-36'>
           <div className=' w-[24px] h-[24px]'>
             <Image src={fb} />
           </div>
