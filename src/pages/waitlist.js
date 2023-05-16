@@ -67,7 +67,7 @@ const Waitlist = () => {
                 {
                     showodal? (
                         <div className=" fixed lg:fixed inset-0 flex justify-center">
-                            <div className=" px-[16px] w-[342px] h-[1470px] xl:px-[45px] bg-[#F2F6FF] xl:w-[1104px] xl:h-[644px] rounded-[32px] font-urbanist">
+                            <div className=" overflow-y-auto px-[16px] w-[342px] h-[100%] lg:px-[45px] bg-[#F2F6FF] lg:w-[1104px] lg:h-[644px] rounded-[32px] font-urbanist">
                                 <div onClick={()=>setShowModal(false)} className=" cursor-pointer text-[20.4px] font-bold mt-[62px] flex justify-end">X</div>
                                 <div className=" flex flex-col xl:flex-row lg:flex lg:gap-[32px]">
                                     <div className=" flex flex-col gap-[24px]">
