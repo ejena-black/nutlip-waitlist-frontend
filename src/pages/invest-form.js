@@ -8,7 +8,7 @@ const InvestForm = () => {
 
     return(
         <div className=" lg:flex w-full">
-            <div className=" xl:w-[640px]">
+            <div className=" xl:w-[640px] lg:h-full">
                 <Image 
                 src={invest}
                 alt="image"

@@ -7,7 +7,7 @@ const Waitlist = () => {
     const [showSubmit, setShowSubmit] = useState(false);
     return(
         <div className=" lg:flex w-full">
-            <div className=" xl:w-[640px]">
+            <div className=" xl:w-[640px] lg:h-full">
                 <Image 
                 src={waitlist}
                 alt="image"
