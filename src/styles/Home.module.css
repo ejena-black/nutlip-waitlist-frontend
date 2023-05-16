@@ -25,8 +25,23 @@
     color: #ffffff;
     width: 100vw;
     height: 100vh;
-    position: relative;
+    background-position: center;
 
+}
+
+.waitlist_image{
+    background-image: url(../../public/waitlist1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 781px;
+    width: 640px;
+}
+.invest_image{
+    background-image: url(../../public/invest1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 781px;
+    width: 640px;
 }
 
 
@@ -39,6 +54,14 @@
     .hero {
         height: 100%;
         background-position: center;
+    }
+    .waitlist_image{
+        width: 100%;
+        height: 340px;
+    }
+    .invest_image{
+        width: 100%;
+        height: 340px;
     }
   }
 

@@ -1,5 +1,6 @@
 import Image from "next/image";
-import invest from "../../public/invest1.png";
+// import invest from "../../public/invest1.png";
+import styles from "../styles/Home.module.css";
 import arrow from "../../public/arrow.png";
 import { useState } from "react";
 const InvestForm = () => {
@@ -8,71 +9,72 @@ const InvestForm = () => {
 
     return(
         <div className=" lg:flex w-full">
-            <div className=" xl:w-[640px] lg:h-full">
-                <Image 
-                src={invest}
-                alt="image"
-                />
+            <div className={styles.invest_image}>
             </div>  
-            <div className=" w-full lg:w-[800px] bg-[#001F6D] flex justify-center py-10">
-                <div className=" w-full lg:w-[448px] text-[#FFFFFF]">
-                    <div className="px-[8%] lg:px-0 font-unbounded flex gap-6 mt-10 mb-12 text-[24px] items-center">
+            <div className="  w-full h-[904px] lg:w-[800px] lg:h-[781px] bg-[#001F6D] flex justify-center">
+                <div className=" w-full lg:w-[448px] text-[#FFFFFF] flex flex-col gap-[48px]">
+                    <div className="px-[8%] lg:px-0 font-unbounded mt-[48px] flex gap-6 text-[24px] items-center">
                         <Image
                         src={arrow} 
                         />
                         <span>Invest with nutlip</span>
                         
                     </div>
-                   
-                   
-                    <div className=" px-[8%] lg:px-0 font-urbanist mb-[13px]">
-                        <span className=" text-[16px] leading-[19px] font-extralight">Full name</span>
-                        <input 
-                        className=" rounded-[8px] block text-[#505050] p-[16px] w-full text-[18px]"
-                         type="text"
-                         placeholder="Full name"/>
-                    </div>
-                    <div className=" px-[8%] lg:px-0 font-urbanist mb-[13px]">
-                        <span className=" text-[16px] leading-[19px font-extralight">Company</span>
-                        <input 
-                        className=" rounded-[8px] block text-[#505050] p-[16px] w-full text-[18px]"
-                         type="text"
-                         placeholder="Company name"/>
-                    </div>
-                    <div className=" px-[8%] lg:px-0 font-urbanist mb-[13px]">
-                        <span className=" text-[16px] leading-[19px]  font-extralight">What best describes you</span>
-                        <select 
-                        className=" rounded-[8px] block text-[#505050] p-[16px] w-full text-[18px]"
-                         placeholder="Company name">
-                            <option disabled>What best describes you</option>
-                            <option>Individual</option>
-                            <option>Corporate</option>
-                            <option>Venture capital</option>
-                            <option>Others</option>
-                         </select>
-                    </div>
-                    <div className=" px-[8%] lg:px-0 font-urbanist mb-[13px]">
-                        <span className=" text-[16px] leading-[19px] font-extralight">Comments</span>
-                        <textarea 
-                        className=" h-[109px] rounded-[8px] block text-[#505050] p-[16px] w-full text-[18px]"
-                         />
-                    </div>
 
-                    <div className=" px-[8%] lg:px-0 mt-16 flex gap-[8px] w-full">
-                        <div onClick={() => setShowModal(true)} className=" cursor-pointer text-[18px] w-[148px] rounded-[8px] border-2 p-[16px] text-center">Learn more</div>
-                        <div onClick={() => setShowSubmit(true)} className=" cursor-pointer w-[186px] text-[18px] rounded-[8px] lg:w-[292px] bg-[#DA0025] p-[16px] text-center">Submit</div>
+                    <form className="flex flex-col gap-[48px]">
+                    <div className="flex flex-col gap-[16px] lg:w-[433px] font-urbanist">
+                        <div className=" px-[8%] lg:px-0 flex flex-col gap-[8px]">
+                                <span className=" text-[16px] leading-[19px] font-extralight">Full name</span>
+                                <input 
+                                className=" rounded-[8px] block text-[#505050] p-[16px] w-full text-[18px]"
+                                type="text"
+                                placeholder="Full name"/>
+                        </div>
+                        <div className="  px-[8%] lg:px-0 flex flex-col gap-[8px]">
+                                <span className=" text-[16px] leading-[19px font-extralight">Company</span>
+                                <input 
+                                className=" rounded-[8px] block text-[#505050] p-[16px] w-full text-[18px]"
+                                type="text"
+                                placeholder="Company name"/>
+                        </div>
+                        <div className="  px-[8%] lg:px-0 flex flex-col gap-[8px]">
+                                <span className=" text-[16px] leading-[19px]  font-extralight">What best describes you</span>
+                                <select 
+                                className=" rounded-[8px] block text-[#505050] p-[16px] w-full text-[18px]"
+                                placeholder="Company name">
+                                    <option disabled>What best describes you</option>
+                                    <option>Individual</option>
+                                    <option>Corporate</option>
+                                    <option>Venture capital</option>
+                                    <option>Others</option>
+                                </select>
+                        </div>
+                        <div className=" px-[8%] lg:px-0 flex flex-col gap-[8px]">
+                                <span className=" text-[16px] leading-[19px] font-extralight">Comments</span>
+                                <textarea 
+                                className=" h-[109px] rounded-[8px] block text-[#505050] p-[16px] w-full text-[18px]"
+                                />
+                        </div>
                     </div>
-
+                    <div>
+                            <div className="lg:px-0 flex gap-[8px] px-[8%] w-full">
+                                <div onClick={() => setShowModal(true)} className=" cursor-pointer text-[18px] w-[148px] rounded-[8px] border-2 p-[16px] text-center">Learn more</div>
+                                <button onClick={() => setShowSubmit(true)} className=" cursor-pointer w-[186px] text-[18px] rounded-[8px] lg:w-[292px] bg-[#DA0025] p-[16px] text-center">Submit</button>
+                            </div>
+                    </div>
+                   </form>
+                    
                 </div>
+               
                 {
                     showodal? (
-                        <div className=" absolute xl:fixed inset-0 flex justify-center">
-                            <div className=" relative px-[16px] w-[342px] h-[950px] xl:px-[87.5px] bg-[#F2F6FF] xl:w-[818px] xl:h-[644px] rounded-[32px] font-urbanist">
+                        <div className=" absolute lg:fixed inset-0 flex justify-center">
+                            <div className=" relative px-[16px] w-[342px] h-[950px] lg:px-[87.5px] bg-[#F2F6FF] lg:w-[818px] xl:h-[644px] rounded-[32px] font-urbanist">
                                 <div onClick={()=>setShowModal(false)} className=" cursor-pointer text-[20.4px] font-bold mt-[76.5px] flex justify-end">X</div>
                         
                                 <div className=" flex flex-col gap-[16px]">
                                     <p className=" font-bold text-[18px] leading-[21.6px]">Invest with nutlip</p>
-                                    <div className=" w-[310px] xl:w-[643px] text-[14px] flex flex-col leading-[16.8px] xl:gap-[16px] gap-[10px]"><p>Introducing our exciting new property search portal in order to garner your interest for investment. Our platform seeks to revolutionize the way people search for and invest in real estate properties. We are also leveraging blockchain technology and continue to develop it to ensure quick and transparency of transactions for both users and agents listing on the platform.</p>
+                                    <div className=" w-[310px] lg:w-[643px] text-[14px] flex flex-col leading-[16.8px] lg:gap-[16px] gap-[10px]"><p>Introducing our exciting new property search portal in order to garner your interest for investment. Our platform seeks to revolutionize the way people search for and invest in real estate properties. We are also leveraging blockchain technology and continue to develop it to ensure quick and transparency of transactions for both users and agents listing on the platform.</p>
 
                                         <p>We are leveraging technology to create a database of properties that is continually updated with real-time data, ensuring that our users have access to the most relevant and up-to-date property listings.</p>
 
@@ -92,7 +94,7 @@ const InvestForm = () => {
                 {
                     showSubmit? (
                         <div className=" fixed inset-0 flex justify-center">
-                            <div className=" px-[87.5px] bg-[#F2F6FF] xl:w-[592px] xl:h-[644px] rounded-[32px] font-urbanist">
+                            <div className=" w-[340px] px-[87.5px] bg-[#F2F6FF] lg:w-[592px] lg:h-[644px] rounded-[32px] font-urbanist">
                                 <div onClick={()=>setShowSubmit(false)} className=" cursor-pointer text-[20.4px] font-bold mt-[76.5px] flex justify-end">X</div>
                                 <div className="flex justify-center items-center">
                                     <div className=" w-[192px] h-[272px] flex flex-col items-end">
