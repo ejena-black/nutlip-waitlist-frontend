@@ -69,7 +69,7 @@ const InvestForm = () => {
                 {
                     showodal? (
                         <div className=" absolute lg:fixed inset-0 flex justify-center">
-                            <div className=" relative px-[16px] w-[342px] h-[950px] lg:px-[87.5px] bg-[#F2F6FF] lg:w-[818px] xl:h-[644px] rounded-[32px] font-urbanist">
+                            <div className="  overflow-y-auto px-[16px] w-[342px] h-[950px] lg:px-[87.5px] bg-[#F2F6FF] lg:w-[818px] xl:h-[644px] rounded-[32px] font-urbanist">
                                 <div onClick={()=>setShowModal(false)} className=" cursor-pointer text-[20.4px] font-bold mt-[76.5px] flex justify-end">X</div>
                         
                                 <div className=" flex flex-col gap-[16px]">

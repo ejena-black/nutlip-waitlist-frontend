@@ -10,7 +10,7 @@ const Waitlist = () => {
             <div className={styles.waitlist_image}>
               
             </div>  
-            <div className=" w-full h-[904px] lg:w-[800px] lg:h-[781px] bg-[#001F6D] flex justify-center">
+            <div className=" w-full h-[904px] lg:w-[800px] xl:h-[781px] lg:h-[100vh] bg-[#001F6D] flex justify-center">
                 <div className=" w-full lg:w-[448px] text-[#FFFFFF] flex flex-col gap-[48px]">
                     <div className="px-[8%] lg:px-0 font-unbounded mt-[48px] flex gap-6 text-[24px] items-center">
                         <Image

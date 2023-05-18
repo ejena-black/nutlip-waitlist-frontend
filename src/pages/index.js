@@ -12,9 +12,9 @@ export default function Home() {
   return (
     <main className={styles.main}>
     <main className={styles.hero}>
-      <div className='flex flex-col lg:mt-20 gap-8 mt-24'>
-          <div className='text-[33.67px] lg:text-[54px]  flex justify-center'>
-              <span className='lg:w-[769px] leading-[41.75px] font-unbounded block text-center lg:leading-[66.96px] tracking-wide'>Revolutionary property search portal </span>
+      <div className='flex flex-col lg:mt-20 gap-8 mt-24 md:px-2'>
+          <div className=' text-[33.67px] md:text-[54px] lg:text-[54px]  flex justify-center'>
+              <span className=' md:w-[769px] lg:w-[769px] leading-[41.75px] font-unbounded block text-center lg:leading-[66.96px] tracking-wide'>Revolutionary property search portal </span>
             </div>
 
             <div className=' flex justify-center'>
@@ -26,7 +26,7 @@ export default function Home() {
               </span>
             </div>
 
-            <form className=' mt-16 lg:flex px-[8%] flex-col lg:flex-row justify-center lg:gap-[10px] font-urbanist lg:mt-10'>
+            <form className=' mt-16 lg:flex px-[8%] flex-col  md:flex-row justify-center lg:gap-[10px] font-urbanist lg:mt-10'>
               <input className=' p-[16px] w-full lg:w-[433px] text-black rounded-[8px] bg-[#E7E7E7] border-2 border-[#E7E7E7]' placeholder='Email address' type='email' required/>
               <button className=' mt-4 lg:mt-0 text-[18px] bg-[#da0025] w-[240px] p-[16px] rounded-[8px]'><Link href={"/waitlist"}>Get early access</Link></button>
             </form>
