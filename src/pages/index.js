@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
     <main className={styles.hero}>
-      <div className='flex flex-col lg:mt-20 gap-8 mt-24 md:px-2'>
+      <div className='flex flex-col lg:mt-32 gap-8 mt-24 md:px-2'>
           <div className=' text-[33.67px] md:text-[54px] lg:text-[54px]  flex justify-center'>
               <span className=' md:w-[769px] lg:w-[769px] leading-[41.75px] font-unbounded block text-center lg:leading-[66.96px] tracking-wide'>Revolutionary property search portal </span>
             </div>
