@@ -15,6 +15,7 @@
     display: flex;
     justify-content: center;
     align-items:flex-end;
+    z-index: -10%;
 }
 
 .hero{
@@ -34,21 +35,22 @@
     background-image: url(../../public/waitlist1.png);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 640px;
+ 
     
 }
 .invest_image{
     background-image: url(../../public/invest1.png);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 640px;
+    background-position: center;
+    
 }
 
 
 
 /* mobile screens */
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 200px) and (max-width: 300px) {
     .main{
         height: 100%;
        
@@ -61,19 +63,42 @@
     }
     .waitlist_image{
         width: 100%;
-        height: 340px;
+        height: 500px;
     }
     .invest_image{
         width: 100%;
-        height: 340px;
+        height: 500px;
     }
+  }
+
+@media screen and (min-width:301px) and (max-width:600px) {
+    .main{
+        height: 100vh;
+       
+    }
+    
+    .hero {
+        height: 100%;
+        background-position: center;
+        width: 100%;
+    }
+
+    .waitlist_image{
+        width: 100%;
+        height: 500px;
+    }
+    .invest_image{
+        width: 100%;
+        height: 500px;
+    }
+
   }
 
 
 
 
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 601px) and (max-width:1024px) {
     .main{
         height: 100%;
         width: 100vw;
@@ -87,73 +112,63 @@
 
     .waitlist_image{
         width: 100%;
-        /* height: 781px; */
+        height: 800px;
     }
     .invest_image{
         width: 100%;
-        /* height: 781px; */
+        height: 800px;
         
         
     }
   }
 
-
-
-
-
-@media screen and (width: 1024px) {
+@media screen and (min-width: 1025px) {
     .main{
-        height: 100%;
-        width: 100%;
+        height: 100vh;
+        width: 100vw;
     }
     
     .hero {
         height: 100vh;
         background-position: center;
-        width: 100%;
+        
     }
 
     .waitlist_image{
-        width: 38%;
-        /* height: 100%; */
+        width: 100%;
+        /* height: 781px; */
     }
     .invest_image{
-        width: 38%;
-        background-position: left;
-        background-size: cover;
-   
+        width: 100%;
+        /* height: 781px; */
+        
+        
     }
   }
-
-
-@media screen and (min-width: 1026px) {
-    /* .main{
-        height: 100%;
-        width: 100%;
+@media screen and (min-height: 1023px) {
+    .main{
+        height: 100vh;
+        width: 100vw;
     }
     
     .hero {
         height: 100vh;
         background-position: center;
-        width: 100%;
-    } */
+        
+    }
 
-    .waitlist_image{
-        width: 640px;
-        /* height: 100%; */
-    }
-    .invest_image{
-        width: 640px;
-        background-position: left;
-        background-size: cover;
-   
-    }
   }
 
 
 
 
-  
+
+
+
+
+
+
+/*   
 @media screen and (min-height: 1024px) {
     .main{
         height: 100vh;
@@ -187,9 +202,9 @@
     }
     
     .hero {
-        height: 100%;
+        height: 100vh;
         width: 100%;
         background-position: center;
     } 
   } 
-
+ */

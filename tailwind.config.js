@@ -11,6 +11,15 @@ module.exports = {
       unbounded: ["Unbounded","cursive"],
       urbanist: ["Urbanist","sans-serif"],
     },
+    screens: {
+      sm: '640px',
+      ms: '520px',
+      mm: '700px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1025px',
+      xxl: '1300px',
+    },
   },
   plugins: [],
 }
