@@ -71,6 +71,8 @@
     }
   }
 
+
+
 @media screen and (min-width:301px) and (max-width:600px) {
     .main{
         height: 100vh;
@@ -124,12 +126,13 @@
 
 @media screen and (min-width: 1025px) {
     .main{
-        height: 100vh;
+        height: 100%;
         width: 100vw;
     }
     
     .hero {
-        height: 100vh;
+        /* here */
+        height: 100%;
         background-position: center;
         
     }
