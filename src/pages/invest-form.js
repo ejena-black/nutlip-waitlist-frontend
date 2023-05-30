@@ -131,8 +131,8 @@ const InvestForm = () => {
                                 onChange={handleChange}
                                 required
                                 className=" rounded-[8px] block text-[#505050] p-[16px] w-full text-[18px]"
-                                placeholder="Company name">
-                                    <option disabled>What best describes you</option>
+                                >
+                                    <option value="">What best describes you</option>
                                     <option value="Individual">Individual</option>
                                     <option value="Corporate">Corporate</option>
                                     <option value="Venture capital">Venture capital</option>

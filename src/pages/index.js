@@ -104,7 +104,7 @@ const handleSubmit = async (event) => {
         </div>
         <div className=' flex items-center lg:gap-[64px] gap-[56px] mt-6 justify-center lg:mt-6 mb-36'>
           <div className=' w-[24px] h-[24px]'>
-            <Image src={fb} />
+            <Link href=""><Image src={fb} /></Link>
           </div>
           <div className=' w-[24px] h-[24px] flex items-center'>
             <Link href="https://instagram.com/official_nutlip?igshid=MzNlNGNkZWQ4Mg=="><Image src={ig} height={21} width={21}/></Link>
@@ -113,7 +113,7 @@ const handleSubmit = async (event) => {
             <Link href="https://twitter.com/Nutlip_?t=jKIi6O2rnVI4woYCa33TyQ&s=09"><Image src={tw}/></Link>
           </div>
           <div className=' w-[24px] h-[24px]'>
-            <Image src={lk}/>
+            <Link href="https://www.linkedin.com/in/nutlip-property-search-portal-4b7a52274"><Image src={lk}/></Link>
           </div>
         </div>
        

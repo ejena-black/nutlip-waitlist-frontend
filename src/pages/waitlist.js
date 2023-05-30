@@ -111,7 +111,7 @@ const Waitlist = () => {
                                 onChange={handleChange}
                                 required
                                 >
-                                    <option disabled>What best describes you</option>
+                                    <option value="">What best describes you</option>
                                     <option value="Property seeker">Property seeker</option>
                                     <option value="Real estate agent">Real estate agent</option>
                                     <option value="Mortgage broker">Mortgage broker</option>
