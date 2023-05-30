@@ -182,12 +182,11 @@ const Waitlist = () => {
                 
                 {
                     showSubmit? (
-                        <div className=" z-50 fixed inset-0 flex justify-center">
-                            <div className=" mm:w-[70%] px-[87.5px] bg-[#F2F6FF] lg:w-[592px] lg:h-[644px] rounded-[32px] font-urbanist">
-                                <div onClick={()=>setShowSubmit(false)} className=" cursor-pointer text-[20.4px] font-bold mt-[76.5px] flex justify-end">X</div>
+                        <div className=" z-50 fixed inset-[25%] lg:inset-0 flex justify-center">
+                            <div className=" h-[300px] backdrop-blur-lg mm:h-[400px]  mm:w-[70%] px-[87.5px] bg-[#F2F6FF] lg:w-[592px] lg:h-[644px] rounded-[32px] font-urbanist">
+                                <div onClick={()=>setShowSubmit(false)} className=" cursor-pointer text-[20.4px] font-bold mt-[30px] mb-[55px] flex justify-end">X</div>
                                 <div className="flex justify-center items-center">
-                                    <div className=" w-[192px] h-[272px] flex flex-col items-end">
-                                        <div className=" h-[192px] w-[192px]"></div>
+                                    <div className=" w-[192px] h-[272px] flex flex-col items-center">
                                         <div className="text-center">
                                             <p className=" font-bold text-[24px] leading-[28.8px]">Success</p>
                                             <p className=" text-[16px] leading-[19.2px]">Thank you for signing up</p>

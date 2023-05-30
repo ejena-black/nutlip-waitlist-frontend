@@ -91,7 +91,7 @@ const handleSubmit = async (event) => {
               value={formData.email}
               onChange={handleChange}
 
-              className=' p-[16px] w-full lg:w-[433px] text-black rounded-[8px] bg-[#E7E7E7] border-2 border-[#E7E7E7]' placeholder='Email address' required/>
+              className=' invalid:border-blue-500 p-[16px] w-full lg:w-[433px] text-black rounded-[8px] bg-[#E7E7E7] border-2 border-[#E7E7E7]' placeholder='Email address' required/>
               <button
               type="submit"
               className=' mt-4 lg:mt-0 text-[18px] bg-[#da0025] w-[240px] p-[16px] rounded-[8px]'>Get early access</button>
