@@ -119,7 +119,7 @@ const InvestForm = () => {
                                 value={formData.phone_Number}
                                 onChange={handleChange}
                                 className=" rounded-[8px] block text-[#505050] p-[16px] w-full text-[18px]"
-                                type="number"
+                                type="tel"
                                 required
                                 placeholder="Phone number"/>
                         </div>
