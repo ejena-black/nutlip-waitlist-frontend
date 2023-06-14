@@ -8,6 +8,7 @@ import lk from '../../public/linkedin.png';
 import Link from 'next/link';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+import { toast } from 'react-toastify';
 
 
 export default function Home() {
@@ -26,13 +27,20 @@ const handleSubmit = async (event) => {
 
   try {
       // Make a POST request to your backend server
-      const response = await fetch('https://nutlip-waitlist.onrender.com/api/user', {
+      const response = await toast.promise(
+        fetch('https://nutlip-waitlist.onrender.com/api/user', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify(formData),
-        });
+        }),
+        {
+          pending: 'Getting access, please wait',
+          success: 'Done! Access granted',
+          error: 'Error! Try again'
+        }
+      ) ;
      
 
     

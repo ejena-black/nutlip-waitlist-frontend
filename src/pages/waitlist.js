@@ -3,6 +3,7 @@ import arrow from "../../public/arrow.png";
 import { useState } from "react";
 import styles from "../styles/Home.module.css";
 import axios from "axios";
+import { toast } from "react-toastify";
 const Waitlist = () => {
     const [showodal, setShowModal] = useState(false);
     const [showSubmit, setShowSubmit] = useState(false);
@@ -25,13 +26,20 @@ const Waitlist = () => {
 
         try {
             // Make a POST request to your backend server
-            const response = await fetch('https://nutlip-waitlist.onrender.com/api/waitlist', {
+            const response = await toast.promise(
+                fetch('https://nutlip-waitlist.onrender.com/api/waitlist', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
               },
               body: JSON.stringify(formData),
-            });
+            }),
+            {
+                pending: 'Joining please wait',
+                success: 'Joined! Thanks',
+                error: 'Error try again'
+              }
+            ); 
       
             if (response.ok) {
               // Handle successful form submission

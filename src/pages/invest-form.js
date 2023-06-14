@@ -3,6 +3,7 @@ import invest from "../../public/invest1.png";
 import styles from "../styles/Home.module.css";
 import arrow from "../../public/arrow.png";
 import { useState } from "react";
+import { toast } from "react-toastify";
 // import axios from "axios";
 const InvestForm = () => {
     const [showodal, setShowModal] = useState(false);
@@ -27,13 +28,20 @@ const InvestForm = () => {
 
         try {
             // Make a POST request to your backend server
-            const response = await fetch('https://nutlip-waitlist.onrender.com/api/investor', {
+            const response = await toast.promise(
+                fetch('https://nutlip-waitlist.onrender.com/api/investor', {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(formData),
-              });
+              }),
+              {
+                pending: 'Submitting, please wait',
+                success: 'Submitted! Thanks',
+                error: 'Error try again'
+              }
+            ); 
            
 
           
