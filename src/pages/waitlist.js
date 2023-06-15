@@ -4,6 +4,7 @@ import { useState } from "react";
 import styles from "../styles/Home.module.css";
 import axios from "axios";
 import { toast } from "react-toastify";
+import Link from "next/link";
 const Waitlist = () => {
     const [showodal, setShowModal] = useState(false);
     const [showSubmit, setShowSubmit] = useState(false);
@@ -72,9 +73,11 @@ const Waitlist = () => {
             <div className="  lg:w-full xl:flex-grow xl:pt-28 pt-10 lg:max-h-max xl:min-h-screen xxl:min-h-screen bg-[#001F6D] flex justify-center">
                 <div className=" w-full lg:w-[80%] xl:w-[448px] text-[#FFFFFF] flex flex-col gap-[48px]">
                     <div className="px-[8%] lg:px-0 font-unbounded mt-[48px] flex gap-6 text-[24px] items-center">
+                        <Link href={"/"}>
                         <Image
                         src={arrow} 
                         />
+                        </Link>
                         <span>Join the waitlist</span>   
                     </div>
 

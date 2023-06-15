@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import arrow from "../../public/arrow.png";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import Link from "next/link";
 // import axios from "axios";
 const InvestForm = () => {
     const [showodal, setShowModal] = useState(false);
@@ -74,9 +75,11 @@ const InvestForm = () => {
             <div className=" lg:w-full xl:flex-grow xl:pt-28 pt-10 lg:max-h-max  xl:min-h-screen bg-[#001F6D] flex justify-center">
                 <div className=" w-full xl:w-[448px] lg:w-[80%] text-[#FFFFFF] flex flex-col gap-[48px]">
                     <div className="px-[8%] lg:px-0 font-unbounded mt-[48px] flex gap-6 text-[24px] items-center">
+                        <Link href={"/"}>
                         <Image
                         src={arrow} 
                         />
+                        </Link>
                         <span>Invest with nutlip</span>
                         
                     </div>
